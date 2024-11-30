@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4375rem;
+  margin-block: 1rem 4rem;
+
+  & img {
+    width: 1.9rem;
+    height: 1.45625rem;
+  }
+
+  & h1 {
+    font: bold 1.667rem/1.5 var(--font-family-logo);
+    letter-spacing: -0.03334rem;
+    color: var(--content-secondary);
+  }
+}
