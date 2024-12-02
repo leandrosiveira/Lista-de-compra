@@ -33,7 +33,7 @@ legend {
     font: var(--paragraph);
   }
 
-  & label {
+  & button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,7 @@ legend {
     min-width: 9rem;
     height: 2.75rem;
     background-color: var(--color-brand);
+    border: none;
     border-radius: 0.75rem;
     font: var(--label);
     color: var(--always-white);

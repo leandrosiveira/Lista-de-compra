@@ -24,12 +24,12 @@
       <form action="http://127.0.0.1:5500" method="get" enctype="multipart/form-data">
         <legend>Compras da semana</legend>
         <div class="container-add-item">
-          <input type="text" name="add-item" id="add-item" placeholder="Adicione um novo item">
-          <label for="add-item">Adicionar item</label>
+          <input type="text" name="add-item" id="add_item" placeholder="Adicione um novo item">
+          <button>Adicionar item</button>
         </div>
         <section>
           <div class="item">
-            <input type="checkbox">
+            <input type="checkbox" name="item">
             <p>Pão de forma</p>
             <img src="style/assets/icons/delete.png" alt="Icone de delete">
           </div>
@@ -88,7 +88,7 @@
             <p>Pão de forma</p>
             <img src="style/assets/icons/delete.png" alt="Icone de delete">
           </div>
-         
+          
         </section>
         <footer>
           <img src="style/assets/icons/warning-circle-filled.png" alt="Circulo com exclamação">
@@ -99,5 +99,6 @@
     </main>
   </div>
   <link rel="stylesheet" href="style/index.css">
+  <script src="script.js"></script>
 </body>
 </html>

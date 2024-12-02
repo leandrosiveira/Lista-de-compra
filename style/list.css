@@ -20,6 +20,10 @@ section {
     gap: 0.75rem;
     margin-bottom: 0.75rem;
 
+    &:nth-last-child(1) {
+      margin-bottom: 0rem;
+    }
+
     & input[type="checkbox"] {
       -webkit-appearance: none;
       appearance: none;
