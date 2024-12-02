@@ -1,6 +1,6 @@
 section {
   width: 100%;
-  max-height: calc(100vh - 23.2rem);
+  max-height: calc(100vh - 22.2rem);
   overflow: auto;
 
   &::-webkit-scrollbar {
