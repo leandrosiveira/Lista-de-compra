@@ -7,14 +7,17 @@ const item = document.getElementById("add_item")
 const nameItem = document.querySelector("p")
 const deleteImg = document.querySelector('img[src="style/assets/icons/delete.png"][alt="Icone de delete"]')
 
-newItem.append(input, nameItem, deleteImg)
-section.prepend(newItem)
+// newItem.append(input, nameItem, deleteImg)
+// section.prepend(newItem)
 
 // nameItem.textContent = "Saco de Lixo"
 // console.log(section.innerHTML)
 const button = document.querySelector("button")
 
 button.addEventListener("click", (event) => {
-  event.preventDefault()
+  // event.preventDefault()
   nameItem.textContent = item.value
+  
+  newItem.append(input, nameItem, deleteImg)
+  section.prepend(newItem)
 })
