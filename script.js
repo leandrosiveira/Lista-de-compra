@@ -13,7 +13,7 @@ const infoCloseX = document.getElementById("info-close-X")
 form.addEventListener("submit", (event) => {
   event.preventDefault()
 
-  if (item.value.trim()) {
+  if (item.value !== "") {
     const div = document.createElement("div")
     div.classList.add("item")
   
