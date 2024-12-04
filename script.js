@@ -5,6 +5,8 @@ const addItem = document.getElementById("add-item")
 const deleteImg = document.querySelector('img[src="style/assets/icons/delete.png"][alt="Icone de delete"]')
 const deleteItem = document.querySelector(".item")
 const infoDeleted = document.querySelector(".display-none")
+const footer = document.querySelector("footer")
+const infoCloseX = document.getElementById("info-close-X")
 
 
 
@@ -38,6 +40,17 @@ section.addEventListener("click", (event) => {
     itemDeleted.remove()
 
     infoDeleted.classList.remove("display-none")
+
+    setTimeout(() => {
+      footer.classList.add("display-none")
+    }, 10000)
   }
 })
 
+footer.addEventListener("click", (event) => {
+  if(event.target.id === "info-close-X") {
+    
+    footer.classList.add("display-none")
+  }
+})
+ 
