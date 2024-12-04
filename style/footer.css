@@ -23,4 +23,9 @@ footer {
     margin-left: auto;
     cursor: pointer;
   }
+
+}
+
+.display-none {
+  display: none;
 }

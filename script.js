@@ -30,9 +30,14 @@ form.addEventListener("submit", (event) => {
   addItem.value = ""
 })
 
-deleteImg.addEventListener("click", (event) => {
-  event.preventDefault()
 
-  deleteItem.remove();
+section.addEventListener("click", (event) => {
+  if (event.target.tagName === "IMG") {
+    const itemDeleted = event.target.closest("div")
+    itemDeleted.remove()
+
+    const infoDeleted = document.querySelector(".display-none")
+    infoDeleted.classList.remove("display-none")
+  }
 })
 
