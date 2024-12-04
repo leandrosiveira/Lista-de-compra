@@ -4,6 +4,7 @@ const item = document.querySelector("input")
 const addItem = document.getElementById("add-item")
 const deleteImg = document.querySelector('img[src="style/assets/icons/delete.png"][alt="Icone de delete"]')
 const deleteItem = document.querySelector(".item")
+const infoDeleted = document.querySelector(".display-none")
 
 
 
@@ -36,7 +37,6 @@ section.addEventListener("click", (event) => {
     const itemDeleted = event.target.closest("div")
     itemDeleted.remove()
 
-    const infoDeleted = document.querySelector(".display-none")
     infoDeleted.classList.remove("display-none")
   }
 })
